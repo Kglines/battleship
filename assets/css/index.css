@@ -1,0 +1,24 @@
+/* Your code here */
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 90vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#board-div {
+    width: 50%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.square {
+    width: 65px;
+    height: 65px;
+    border: 1px solid black;
+    margin-bottom: 3px;
+}

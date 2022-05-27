@@ -7,6 +7,14 @@ body {
     width: 90vw;
     align-items: center;
     justify-content: center;
+    background-color: rgb(81, 81, 251);
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    font-family: cursive;
+    margin-top: 100px;
 }
 
 #board-div {
@@ -17,8 +25,67 @@ body {
 }
 
 .square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 65px;
     height: 65px;
-    border: 1px solid black;
+    border: 1px solid lime;
     margin-bottom: 3px;
+    font-size: 25px;
+}
+
+.game-over {
+    font-size: 100px;
+    font-family: cursive;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border-radius: 120px;
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border: 10px solid lime;
+    font-family: cursive;
+    font-size: 30px;
+}
+
+button:hover {
+    background-color: lime;
+    border-color: blue;
+    color: black;
+}
+
+#skull {
+    width: 200px;
+    height: 200px;
+}
+
+#image-div {
+    position: relative;
+    order: 1;
+    height: 200px;
+}
+
+#button {
+    position: relative;
+    order: 3;
+    margin-top: 10px;
+}
+
+#lose{
+    position: relative;
+    order: 2;
+    margin: 0;
+}
+
+h2{
+    font-size: 80px;
 }
